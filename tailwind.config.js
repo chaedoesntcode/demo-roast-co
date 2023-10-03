@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: ['var(--font-playfair)'],
+        secondary: ['var(--font-public'],
+      },
+      colors: {
+        primary: '#333333',
+        secondary: '#EAC494',
+        accent: '#A52A2A',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
