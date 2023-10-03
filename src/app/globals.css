@@ -19,3 +19,21 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+@layer base {
+  .h1 {
+    @apply text-[30px] lg:text-[48px] font-primary font-bold mb-2;
+  }
+  .h2 {
+    @apply text-[26px] lg:text-[32px] font-primary mb-2;
+  }
+  .h3 {
+    @apply text-[24px] lg:text-[28px] font-secondary  mb-2;
+  }
+  .section {
+    @apply w-[90vw] mx-auto;
+  }
+  .btn {
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base font-secondary font-semibold bg-accent hover:bg-[#921D1D] ;
+  }
+}
