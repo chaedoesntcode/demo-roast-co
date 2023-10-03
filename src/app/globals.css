@@ -34,6 +34,6 @@ body {
     @apply w-[90vw] mx-auto;
   }
   .btn {
-    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base font-secondary font-semibold bg-accent hover:bg-[#921D1D] ;
+    @apply h-[50px] bg-accent hover:bg-[] px-8 py-2 rounded-lg hover:bg-[#921D1D] transition;
   }
 }
