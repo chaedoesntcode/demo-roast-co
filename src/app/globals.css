@@ -22,7 +22,7 @@ body {
 
 @layer base {
   .h1 {
-    @apply text-[30px] lg:text-[48px] font-primary font-bold mb-2;
+    @apply text-[30px] lg:text-[80px] font-primary font-bold mb-2;
   }
   .h2 {
     @apply text-[26px] lg:text-[32px] font-primary mb-2;
