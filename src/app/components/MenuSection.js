@@ -15,11 +15,11 @@ const MenuSection = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 text-center'>
           <Link href='/' className='flex flex-col hover:scale-105 transition'>
-            <Image className='rounded-[30px] drop-shadow-md' src={DrinksImg} width={500} height={300} objectFit='cover' alt="The Demo Roast Co. Logo"  />
+            <Image className='rounded-[30px] drop-shadow-md' src={DrinksImg} width={500} height={300} alt="The Demo Roast Co. Logo"  />
             <p className='font-semibold mt-4'>Drinks</p>
           </Link>
           <Link href='/' className='flex flex-col hover:scale-105 transition'>
-            <Image className='rounded-[30px] drop-shadow-md' src={PastryImg} width={500} height={300} objectFit='cover' alt="The Demo Roast Co. Logo"  />
+            <Image className='rounded-[30px] drop-shadow-md' src={PastryImg} width={500} height={300} alt="The Demo Roast Co. Logo"  />
             <p className='font-semibold mt-4'>Pastries</p>
           </Link>
         </div>

@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className='section bg-secondary h-[500px]'>
       <div className='w-[85vw] h-full mx-auto flex items-center gap-x-10'>
         <div className='flex-1'>
-          <Image className='rounded-[30px]' src={AboutImg} width='100%' height='100%' objectFit='cover' alt="The Demo Roast Co. Logo"  />
+          <Image className='rounded-[30px]' src={AboutImg} width='100%' height='100%' alt="The Demo Roast Co. Logo"  />
         </div>
 
         <div className='flex-1'>
