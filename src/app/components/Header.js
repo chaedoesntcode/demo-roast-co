@@ -1,51 +1,46 @@
-'use client'
-import React, { useState }  from 'react'
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import Logo from '../../../public/images/logo.png'
+import MobileNav from './MobileNav'
 
 const Header = () => {
-
-  const [menuIcon, setMenuIcon] = useState(false);  
-
-  const handleMobileNav = () => {
-    setMenuIcon( !menuIcon );
-  }
-
   return (
-    <header className='bg-primary text-white w-full fixed top-0 left-0 z-10'>
-        <nav className='max-w-[1300px] mx-auto h-[100px] px-[30px] lg:px-[80px] flex justify-between items-center'>
-            {/* start: nav logo */}
-            <Link href='/'>
+    <header className='bg-black text-white w-full fixed top-0 left-0 z-10'>
+        <div className='max-w-[1300px] px-10 xl:px-0 mx-auto h-[100px] flex justify-between items-center'>
+        {/* start: logo */}
+         <Link href='/'>
                 <Image src={Logo}  width={300} height={200} alt="The Demo Roast Co. Logo" />
-            </Link>
-            {/* end: nav logo */}
-            {/* start: nav links */}
+        </Link>
+        {/* end: logo */}
+
+        {/* start: desktop nav*/}
+        <nav className='hidden lg:flex'>
             <ul className='flex flex-row text-1xl items-center gap-x-8'>
                 <li>
-                    <Link href='/' onClick={() => handleMobileNav(false)} >Home</Link>
+                    <Link href='/'>Home</Link>
                 </li>
                 <li>
-                    <Link href='/' onClick={() => handleMobileNav(false)} >About</Link>
+                    <Link href='/'>About</Link>
                 </li>
                 <li>
-                    <Link href='/' onClick={() => handleMobileNav(false)} >Menu</Link>
+                    <Link href='/'>Menu</Link>
                 </li>
                 <li>
-                    <Link href='/' onClick={() => handleMobileNav(false)} >Visit</Link>
+                    <Link href='/'>Visit</Link>
                 </li>
                 <li>
-                    <Link href='/' onClick={() => handleMobileNav(false)} >Contact</Link>
+                    <Link href='/'>Contact</Link>
                 </li>
             </ul>
-            {/* end: nav links */}
-            {/* start: nav button */}
-            <button className='h-[50px] bg-accent hover:bg-[] px-8 py-2 rounded-lg hover:bg-[#921D1D] transition'>Order Online</button>
-            {/* end: nav button */}
         </nav>
+        {/* end: desktop nav*/}
 
+        {/* start: mobile nav*/}
+        <MobileNav />
+        {/* end: mobile nav*/}
 
+        </div>
     </header>
   )
 }

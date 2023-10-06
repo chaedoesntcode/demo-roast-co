@@ -21,9 +21,15 @@ body {
   overflow-x: hidden;
 }
 
+li:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: all;
+}
+
 @layer base {
   .h1 {
-    @apply text-[30px] lg:text-[80px] font-primary font-bold mb-2;
+    @apply text-[40px] md:text-[60px] lg:text-[80px] font-primary font-extrabold mb-2;
   }
   .h2 {
     @apply text-[26px] lg:text-[32px] font-primary font-semibold mb-2;
@@ -35,6 +41,9 @@ body {
     @apply w-screen mx-auto;
   }
   .btn {
-    @apply h-[50px] bg-accent px-8 py-2 rounded-lg hover:bg-[#921D1D] text-white transition;
+    @apply h-[50px] bg-accent hover:bg-[#921D1D] w-52 rounded-full text-white transition;
+  }
+  .order-btn {
+    @apply h-[50px] border border-secondary hover:bg-secondary hover:text-amber-950 w-52 rounded-full text-secondary transition;
   }
 }
