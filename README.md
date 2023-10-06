@@ -12,7 +12,7 @@ A site for a fictional coffee company designed and developed by me.
 ### Deployment
 The project is deployed on [Vercel](https://vercel.com/).
 
-You can access the deployed version here: [https://yourproject.vercel.app](https://yourproject.vercel.app).
+You can access the deployed version here: [https://demo-roast-co.vercel.app/](https://demo-roast-co.vercel.app/).
 
 
 
