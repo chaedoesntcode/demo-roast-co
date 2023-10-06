@@ -6,7 +6,7 @@ import MobileNav from './MobileNav'
 
 const Header = () => {
   return (
-    <header className='bg-black text-white w-full fixed top-0 left-0 z-10'>
+    <header className='bg-black text-secondary w-full fixed top-0 left-0 z-10'>
         <div className='max-w-[1300px] px-5 md:px-10 xl:px-0 mx-auto h-[100px] flex justify-between items-center'>
         {/* start: logo */}
          <Link href='/'>
