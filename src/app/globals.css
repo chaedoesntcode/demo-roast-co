@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+li:hover {
+  font-weight: 700;
+}
+
 @layer base {
   .h1 {
     @apply text-[40px] md:text-[60px] lg:text-[80px] font-primary font-extrabold mb-2;
