@@ -35,6 +35,6 @@ body {
     @apply w-screen mx-auto;
   }
   .btn {
-    @apply h-[50px] bg-accent hover:bg-[] px-8 py-2 rounded-lg hover:bg-[#921D1D] transition;
+    @apply h-[50px] bg-accent px-8 py-2 rounded-lg hover:bg-[#921D1D] text-white transition;
   }
 }
