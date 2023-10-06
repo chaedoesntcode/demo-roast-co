@@ -4,7 +4,7 @@ import { BiLogoFacebook,BiLogoInstagram } from 'react-icons/bi'
 
 const Footer = () => {
   return (
-    <footer className='section  bg-black text-white'>
+    <footer className='section  bg-black text-secondary'>
       <div className='w-[85vw] py-[100px] mx-auto h-full flex flex-col gap-y-8 items-center md:items-start md:flex-row md:justify-between xl:justify-center gap-x-10'>
       
       <div className="min-h-full w-full md:w-2/3 lg:w-1/3 xl:w-1/4"> 
@@ -16,11 +16,6 @@ const Footer = () => {
       <div className="min-h-full w-full md:w-1/3 lg:w-1/4"> 
         <div className='lg:px-10 flex flex-col'>
           <p  className='mb-2 md:mb-4 font-bold'>Links</p>
-          {/* <span>Home</span>
-          <span>About</span>
-          <span>Menu</span>
-          <span>Visit</span>
-          <span>Contact</span> */}
           <ul>
             <li>
               <Link href='/'>Home</Link>
@@ -51,10 +46,8 @@ const Footer = () => {
           </div>
        </div>
       </div>
-
-
       </div>
-      <div className=' border-t-primary border-t py-2 text-center'><p>design & development by <Link href='/'>www.chae.dev</Link></p></div>
+      <div className=' border-t-primary border-t py-2 text-center'><p>design & development by <Link href='https://www.chae.dev/'>www.chae.dev</Link></p></div>
 
     </footer>
   )
